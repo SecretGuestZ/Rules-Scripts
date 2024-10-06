@@ -1,2 +1,2 @@
-# hello_world
+# Rules&Scripts
 自用配置
