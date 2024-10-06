@@ -89,7 +89,7 @@ i:
 proxy-providers:
   Subscribe:
     path: ./proxy_providers/tmp.yaml
-    url: https://no1-svip.api-baobaog.rest/s?t=7e8c28b54654e0aca4de5696bcd44deb
+    url: 订阅文件
     type: http
     interval: 86400
     health-check:
