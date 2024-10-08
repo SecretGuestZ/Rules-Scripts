@@ -24,15 +24,15 @@ proxy-groups:
   - {name: 兜底分流,  type: select, proxies: [手动切换, DIRECT, 自动选择, 香港节点, 日本节点, 台湾节点, 美国节点, 狮城节点, 韩国节点, 加拿大节点, 英国节点], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Final.png             }
   
 #节点分组
-  - {name: 自动选择,   type: url-test, include-all: true, interval: 300, tolerance: 50,                                        icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Urltest.png }
-  - {name: 香港节点,   type: url-test, include-all: true, interval: 300, tolerance: 50,  filter: "港|HK|(?i)Hong",             icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png }             
-  - {name: 日本节点,   type: url-test, include-all: true, interval: 300, tolerance: 50,  filter: "日|东京|JP|(?i)Japan",       icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/JP.png }
-  - {name: 台湾节点,   type: url-test, include-all: true, interval: 300, tolerance: 50,  filter: "台|湾|TW|(?i)Taiwan",        icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/TW.png }
-  - {name: 美国节点,   type: url-test, include-all: true, interval: 300, tolerance: 50,  filter: "美|US|(?i)States|American",  icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png }
-  - {name: 狮城节点,   type: url-test, include-all: true, interval: 300, tolerance: 50,  filter: "新|坡|SG|(?i)Singapore",     icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png }
-  - {name: 韩国节点,   type: url-test, include-all: true, interval: 300, tolerance: 50,  filter: "韩|KR|(?i)Korea",            icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/KR.png }
-  - {name: 加拿大节点, type: url-test, include-all: true, interval: 300, tolerance: 50,  filter: "加|拿大|CA|(?i)Canada",      icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/CA.png }
-  - {name: 英国节点,   type: url-test, include-all: true, interval: 300, tolerance: 50,  filter: "英|GB|(?i)England|Britain", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/UK.png }
+  - {name: 自动选择,   type: url-test, include-all: true, interval: 900, tolerance: 50,                                        icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Urltest.png }
+  - {name: 香港节点,   type: url-test, include-all: true, interval: 900, tolerance: 50,  filter: "港|HK|(?i)Hong",             icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png }             
+  - {name: 日本节点,   type: url-test, include-all: true, interval: 900, tolerance: 50,  filter: "日|东京|JP|(?i)Japan",       icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/JP.png }
+  - {name: 台湾节点,   type: url-test, include-all: true, interval: 900, tolerance: 50,  filter: "台|湾|TW|(?i)Taiwan",        icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/TW.png }
+  - {name: 美国节点,   type: url-test, include-all: true, interval: 900, tolerance: 50,  filter: "美|US|(?i)States|American",  icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png }
+  - {name: 狮城节点,   type: url-test, include-all: true, interval: 900, tolerance: 50,  filter: "新|坡|SG|(?i)Singapore",     icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png }
+  - {name: 韩国节点,   type: url-test, include-all: true, interval: 900, tolerance: 50,  filter: "韩|KR|(?i)Korea",            icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/KR.png }
+  - {name: 加拿大节点, type: url-test, include-all: true, interval: 900, tolerance: 50,  filter: "加|拿大|CA|(?i)Canada",      icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/CA.png }
+  - {name: 英国节点,   type: url-test, include-all: true, interval: 900, tolerance: 50,  filter: "英|GB|(?i)England|Britain", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/UK.png }
 
 # 分流规则 
 rule-providers:
