@@ -7,7 +7,8 @@
 #!Modified = surhide
 
 [Script]
-http-response ^https?:\/\/account\.windy\.com\/api\/info script-path=https://raw.githubusercontent.com/ddgksf2013/MoYu/master/WindyProCrack.js, requires-body = true, tag = WindyPro
+#http-request ^https?:\/\/account\.windy\.com\/api\/info script-path=https://raw.githubusercontent.com/ddgksf2013/MoYu/master/WindyProCrack.js, requires-body = true, tag = WindyPro ,timeout = 120
+http-response ^https?:\/\/account\.windy\.com\/api\/info script-path = https://raw.githubusercontent.com/ddgksf2013/MoYu/master/WindyProCrack.js, requires-body = true, tag = WindyPro
 
 [MITM]
 hostname = account.windy.com
