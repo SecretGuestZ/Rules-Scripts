@@ -11,3 +11,7 @@ http-response ^https?:\/\/account\.windy\.com\/api\/info script-path = https://r
 
 [MITM]
 hostname = account.windy.com
+
+var
+ddgksf2013=JSON.parse($response.body);
+$done({body:JSON.stringify(ddgksf2013={surhide})});
