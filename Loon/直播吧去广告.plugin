@@ -12,6 +12,8 @@
 ^https?:\/\/a\.qiumibao\.com\/activities\/config\.php reject
 # ^https?://.+?/allOne\.php\?ad_name reject
 ^https?:\/\/.+\/allOne\.php\?ad_name reject
+^https?:\/\/a\.qiumibao\.com\/ios\/config\/\?_platfrom= reject
+^https?:\/\/a\.qiumibao\.com\/clock\/\?_platfrom= reject
 
 [MITM]
 hostname = a.qiumibao.com
