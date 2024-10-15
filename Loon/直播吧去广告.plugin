@@ -12,6 +12,15 @@
 ^https?:\/\/a\.qiumibao\.com\/activities\/config\.php reject
 # ^https?://.+?/allOne\.php\?ad_name reject
 ^https?:\/\/.+\/allOne\.php\?ad_name reject
+^https?://.+?/promotion/(display_cache|display_ad|feed_display|search_ad) reject
+^https?://.+?/music/common/upload/t_splash_info/ reject
+^https?://.+?/img/ad\.union\.api/ reject
+^https?://.+?/c/s/splashSchedule reject
+^https?://.+?/brand/search/v1\.json reject
+^https?://.+?/api/v\d/adRealTime reject
+^https?://.+?/allOne\.php\?ad_name reject
+^https?://.+?/(outadservice|ting/preload)/ reject
+^https?://.+?(:\d+)?/V\d/splash/getSplashV\d\.action$ reject
 
 [MITM]
 hostname = a.qiumibao.com
