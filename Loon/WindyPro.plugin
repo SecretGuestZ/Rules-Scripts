@@ -7,7 +7,7 @@
 #!Modified = surhide
 
 [Script]
-http-response ^https?:\/\/account\.windy\.com\/api\/info script-path=https://github.com/ddgksf2013/MoYu/raw/master/WindyProCrack.js, requires-body = true, tag = WindyPro 解锁
+http-response ^https?:\/\/account\.windy\.com\/api\/info script-path=https://github.com/ddgksf2013/MoYu/raw/master/WindyProCrack.js, requires-body = true, tag = WindyPro
 
 [MITM]
 hostname = account.windy.com
