@@ -8,8 +8,10 @@
 ^https?:\/\/a\.qiumibao\.com\/ios\/config\/\?version_code= reject
 ^https?:\/\/a\.qiumibao\.com\/activities\/config\.php$ reject-200
 ^https?:\/\/a\.qiumibao\.com\/activities\/config\.php reject
-^https?://a\.qiumibao\.com/activities/config\.php reject
-^https?://.+?/allOne\.php\?ad_name reject
+# ^https?://a\.qiumibao\.com/activities/config\.php reject
+^https?:\/\/a\.qiumibao\.com\/activities\/config\.php reject
+# ^https?://.+?/allOne\.php\?ad_name reject
+^https?:\/\/.+\/allOne\.php\?ad_name reject
 
 [MITM]
 hostname = a.qiumibao.com
