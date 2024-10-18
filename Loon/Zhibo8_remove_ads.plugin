@@ -5,11 +5,11 @@
 #!配置文件[General]中需加入 force-http-engine-hosts = :0 ，Loon默认只会处理80端口的这些原始TCP请求，:0表示解析所有端口
 
 [URL Rewrite]
-^https?:\/\/a\.qiumibao\.com\/activities\/config\.php reject_img
-^https?:\/\/.+?\/allOne\.php\?ad_name reject_img
-^https?:\/\/a\.qiumibao\.com\/ios\/\?_platform= reject_img
-^https?:\/\/a\.qiumibao\.com\/clock\/\?_platform= reject_img
-^https?:\/\/a\.qiumibao\.com\/ios\/config\/\?_platform= reject_img
+^https?:\/\/a\.qiumibao\.com\/activities\/config\.php reject_array
+^https?:\/\/.+?\/allOne\.php\?ad_name reject_array
+^https?:\/\/a\.qiumibao\.com\/ios\/\?_platform= reject_array
+^https?:\/\/a\.qiumibao\.com\/clock\/\?_platform= reject_array
+^https?:\/\/a\.qiumibao\.com\/ios\/config\/\?_platform= reject_array
 
 [MITM]
 hostname = a.qiumibao.com
