@@ -1,7 +1,7 @@
 #!name = WebPage
 #!desc = 移除网页广告。
 #!author = RuCu6[https://github.com/RuCu6]
-#!icon = https://raw.githubusercontent.com/RuCu6/Loon/main/Icons/app/webpage.png
+#!icon = https://raw.githubusercontent.com/surhide/Rules-Scripts/main/Resource/Icons/webpage.png
 #!date = 2024-10-04 01:25
 
 [Rewrite]
