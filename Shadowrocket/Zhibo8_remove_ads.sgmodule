@@ -1,7 +1,7 @@
 #!name = 直播吧去广告
 #!desc = 去除直播吧开屏广告、信息流广告
 #!homepage = https://whatshub.top
-#!Modified = surhide
+#!Modified = SecretGuestZ
 
 [URL Rewrite]
 ^https?:\/\/a\.qiumibao\.com\/activities\/config\.php reject
