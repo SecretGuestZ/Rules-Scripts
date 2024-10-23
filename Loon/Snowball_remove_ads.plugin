@@ -1,0 +1,30 @@
+#!name = 雪球去广告2
+#!desc = 去除雪球开屏广告、信息流广告
+#!homepage = TG
+#!Modified = SecretGuestZ
+
+[URL Rewrite]
+# 开屏广告 感谢【Runestoner】分享
+^https:\/\/api\.xueqiu\.com\/brand\/search\/v1\.json reject
+^https:\/\/api\.xueqiu\.com\/snowpard\/launch_strategy\/query\.json reject
+^https?:\/\/xqimg\.imedao\.com\/[a-z0-9]{24}\.jpg$ reject-200
+
+# 感谢【Joe Joy】分享
+^https:\/\/api\.xueqiu\.com\/snowpard\/launch_strategy\/query\.json reject-dict
+
+# 去除首页的广告
+^https:\/\/api\.xueqiu\.com\/ucprofile\/api\/user\/batchGetUserBasicInfo\.json reject-dict
+
+# 雪球热门推荐
+^https:\/\/api\.xueqiu\.com\/statuses\/livenews\/mark\/list\.json reject
+^https:\/\/api\.xueqiu\.com\/snowflake-theme\/query\/v1\/hot_event\/rich_tag_new\.json reject
+
+# 雪球广告
+^https:\/\/api\.xueqiu\.com\/recommend-proxy\/card\/zj_card\.json reject
+^https:\/\/api\.xueqiu\.com\/analysis\/build_union\/dialog\/show\.json reject
+^https:\/\/fund\.xueqiu\.com\/fundx reject
+^https:\/\/api\.xueqiu\.com\/ucprofile\/api\/user\/batch_get_profile_image\.json reject
+^https:\/\/open\.xueqiu\.com\/mpaas\/rn\/releases\/v2\/match_bundles reject
+
+[MITM]
+hostname = api.xueqiu.com, xqimg.imedao.com
