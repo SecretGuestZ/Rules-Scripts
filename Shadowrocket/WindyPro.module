@@ -1,0 +1,11 @@
+#!name=WindyPro 解锁
+#!desc=解锁 WindyPro 订阅功能
+#!author=ddgksf2013
+#!version=1.1
+#!homepage=https://github.com/ddgksf2013/MoYu
+
+[Script]
+WindyPro 解锁 = type=http-response, pattern=^https?:\/\/account\.windy\.com\/api\/info, requires-body=1, max-size=0, script-path=https://github.com/ddgksf2013/MoYu/raw/master/WindyProCrack.js, enable=true
+
+[MITM]
+hostname = %APPEND% account.windy.com
