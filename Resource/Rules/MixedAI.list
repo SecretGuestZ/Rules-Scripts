@@ -24,12 +24,12 @@ DOMAIN,apple-relay.fastly-edge.com
 DOMAIN,cp4.cloudflare.com
 DOMAIN,guzzoni.apple.com
 
-# Copilot  另在Copilot策略中
-# DOMAIN, api.githubcopilot.com
-# DOMAIN, copilot-proxy.githubusercontent.com
-# DOMAIN, copilot.microsoft.com
-# DOMAIN, sydney.bing.com
-# DOMAIN, www.bing.com
+# Copilot
+DOMAIN, api.githubcopilot.com
+DOMAIN, copilot-proxy.githubusercontent.com
+DOMAIN, copilot.microsoft.com
+DOMAIN, sydney.bing.com
+DOMAIN, www.bing.com
 
 # Gemini  另在Google策略中
 # DOMAIN, bard.google.com
