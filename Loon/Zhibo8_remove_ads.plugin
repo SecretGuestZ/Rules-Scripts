@@ -6,7 +6,7 @@
 
 
 [Rule]
-IP-CIDR, 114.132.165.205/32, REJECT, no-resolve
+IP-CIDR, 114.132.165.205/32, REJECT-DROP, no-resolve
 
 [Rewrite]
 ^https?:\/\/a\.qiumibao\.com\/activities\/config\.php reject-200
