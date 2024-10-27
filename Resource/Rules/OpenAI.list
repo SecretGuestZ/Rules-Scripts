@@ -2,7 +2,10 @@
 # From https://github.com/ACL4SSR/ACL4SSR/issues/129
 
 # OpenAI 包含iOS客户端和网页版会遇到的请求
+DOMAIN-SUFFIX, chatgpt.com
+DOMAIN-SUFFIX, openai.com
 DOMAIN, api.statsig.com
+DOMAIN, api.revenuecat.com
 DOMAIN, browser-intake-datadoghq.com
 DOMAIN, cdn.openai.com
 DOMAIN, chat.openai.com
@@ -29,11 +32,9 @@ DOMAIN-SUFFIX, launchdarkly.com
 DOMAIN-SUFFIX, oaistatic.com
 DOMAIN-SUFFIX, oaiusercontent.com
 DOMAIN-SUFFIX, observeit.net
-DOMAIN-SUFFIX, chatgpt.com
-DOMAIN-SUFFIX, openai.com
 DOMAIN-SUFFIX, openaiapi-site.azureedge.net
 DOMAIN-SUFFIX, openaicom.imgix.net
-DOMAIN-SUFFIX, poe.com
+# DOMAIN-SUFFIX, poe.com
 DOMAIN-SUFFIX, segment.io
 DOMAIN-SUFFIX, sentry.io
 DOMAIN-SUFFIX, stripe.com
@@ -57,6 +58,8 @@ IP-CIDR, 164.92.71.155/32, no-resolve
 IP-CIDR, 164.92.115.213/32, no-resolve
 IP-CIDR, 198.13.38.242/32, no-resolve
 IP-CIDR, 207.148.108.93/32, no-resolve
+IP-CIDR, 151.145.70.9/32, no-resolve
+IP-CIDR6, 2603:c021:8011:7200:7a3b:a858:3a87:d62c/128, no-resolve
 IP-CIDR6, 2001:19f0:7001:55b3:5400:4ff:feab:ba8f/128, no-resolve
 IP-CIDR6, 2001:19f0:7001:8e6:5400:4ff:feab:b953/128, no-resolve
 IP-CIDR6, 2001:19f0:7001:1149:5400:4ff:feac:a0b3/128, no-resolve
