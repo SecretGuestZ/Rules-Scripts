@@ -2,8 +2,9 @@
 #!desc = 去除直播吧开屏广告、信息流广告
 #!homepage = https://whatshub.top
 #!Modified = SecretGuestZ
-#!配置文件[General]中需加入 force-http-engine-hosts = :0 ，Loon默认只会处理80端口的这些原始TCP请求，:0表示解析所有端口
 
+[General]
+force-http-engine-hosts = :8091
 
 [Rule]
 IP-CIDR, 114.132.165.205/32, REJECT-DROP, no-resolve
