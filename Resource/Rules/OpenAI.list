@@ -38,7 +38,8 @@ DOMAIN-SUFFIX, openaicom.imgix.net
 DOMAIN-SUFFIX, segment.io
 DOMAIN-SUFFIX, sentry.io
 DOMAIN-SUFFIX, stripe.com
-DOMAIN-KEYWORD, openaicom-api
+DOMAIN-KEYWORD, openai
+DOMAIN-KEYWORD, chatgpt
 
 # ChatGPT_Voice iOS端chatgpt 使用语音对话时会遇到的请求
 DOMAIN-SUFFIX, chatgpt.livekit.cloud
