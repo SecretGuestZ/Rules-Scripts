@@ -43,7 +43,9 @@ DOMAIN-SUFFIX, host.livekit.cloud
 DOMAIN-SUFFIX, turn.livekit.cloud
 # 新增 start_
 IP-CIDR, 151.145.70.9/32, no-resolve
+IP-CIDR, 155.248.166.35/32, no-resolve
 IP-CIDR6, 2603:c021:8011:7200:7a3b:a858:3a87:d62c/128, no-resolve
+IP-CIDR6, 2603:c021:8011:7200:2a70:8b47:47d7:214b/128, no-resolve
 # _end
 IP-CIDR, 24.199.123.28/32, no-resolve
 IP-CIDR, 45.32.12.145/32, no-resolve
