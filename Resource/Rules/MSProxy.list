@@ -23,6 +23,7 @@ DOMAIN,gateway.bingviz.microsoft.net
 DOMAIN,gateway.bingviz.microsoftapp.net
 DOMAIN,in.appcenter.ms
 DOMAIN,location.microsoft.com
+DOMAIN,login.microsoftonline.com
 DOMAIN,odc.officeapps.live.com
 DOMAIN,self.events.data.microsoft.com
 DOMAIN,services.bingapis.com
