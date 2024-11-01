@@ -384,6 +384,7 @@ DOMAIN,wego.here.com
 # > Mi
 DOMAIN,c.mi.com
 DOMAIN,new.c.mi.com
+
 # > Apple
 DOMAIN-SUFFIX,appsto.re // Apple URL Shortener
 DOMAIN-SUFFIX,smoot.apple.com // Spotlight
@@ -400,18 +401,25 @@ DOMAIN,apple-relay.fastly-edge.com
 DOMAIN,cp4.cloudflare.com
 #  Web Preview
 # DOMAIN,apps.apple.com
-DOMAIN,books.apple.com
+# DOMAIN,books.apple.com
 # DOMAIN,itunes.apple.com
-DOMAIN,tv.apple.com
-#  News
-# DOMAIN,gateway.icloud.com
+# DOMAIN,tv.apple.com
+# AppleNews 由iRingo插件处理
+USER-AGENT,AppleNews*
+USER-AGENT,com.apple.news*
+# DOMAIN,gspe1-ssl.ls.apple.com //proxy后系统自带地图变成国外数据，已在iRingo定位插件中MITM
+# DOMAIN,gateway.icloud.com //icloud网关，TV、news需走代理
 DOMAIN-SUFFIX,apple.news
 DOMAIN,news-assets.apple.com
 DOMAIN,news-client.apple.com
 DOMAIN,news-client-search.apple.com
 DOMAIN,news-edge.apple.com
 DOMAIN,news-events.apple.com
-DOMAIN,apple.comscoreresearch.com
+OMAIN,apple.comscoreresearch.com
+# AppleTV 由iRingo插件处理
+DOMAIN,np-edge.itunes.apple.com
+DOMAIN,play-edge.itunes.apple.com
+DOMAIN-SUFFIX,tv.apple.com
 # TestFlight
 # OMAIN,beta.apple.com
 # DOMAIN,testflight.apple.com
