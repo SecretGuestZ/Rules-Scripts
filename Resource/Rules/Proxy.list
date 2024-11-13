@@ -412,7 +412,7 @@ DOMAIN,np-edge.itunes.apple.com
 DOMAIN,play-edge.itunes.apple.com
 DOMAIN-SUFFIX,tv.apple.com
 # TestFlight
-# OMAIN,beta.apple.com
+# DOMAIN,beta.apple.com
 # DOMAIN,testflight.apple.com
 # Other
 # DOMAIN-SUFFIX,apple-dns.net
