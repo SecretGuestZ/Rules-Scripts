@@ -40,6 +40,7 @@ DOMAIN, www.bing.com
 # DOMAIN, aistudio.google.com
 # DOMAIN, alkalimakersuite-pa.clients6.google.com
 # DOMAIN, makersuite.google.com
+# DOMAIN, proactivebackend-pa.googleapis.com
 
 # Claude
 DOMAIN-SUFFIX, anthropic.com
