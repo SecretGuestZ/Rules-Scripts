@@ -3,8 +3,8 @@
 #!homepage = https://whatshub.top
 #!Modified = SecretGuestZ
 
-[General]
-force-http-engine-hosts = :8091
+# [General]
+#  force-http-engine-hosts = :8091
 
 [Rule]
 IP-CIDR, 114.132.165.205/32, REJECT-DROP, no-resolve
