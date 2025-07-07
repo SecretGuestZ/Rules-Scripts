@@ -58,6 +58,7 @@ DOMAIN,redirector.gvt1.com
 DOMAIN,update.googleapis.com
 # > Google Flights
 DOMAIN-SUFFIX,googletraveladservices.com
+DOMAIN-SUFFIX,googletraveladservices-cn.com
 # > Firebase Cloud Messaging
 DOMAIN,mtalk.google.com
 DOMAIN,alt1-mtalk.google.com
