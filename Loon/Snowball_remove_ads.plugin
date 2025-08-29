@@ -7,34 +7,34 @@
 # ====== 雪球 去广告规则 chatgpt优化======
 # 开屏广告
 ^https?:\/\/xqimg\.imedao\.com\/[a-z0-9]{24}\.jpg$ reject-200
-
 # 搜索页广告
 ^https?:\/\/api\.xueqiu\.com\/brand\/search\/v1\.json url reject
-
 # 启动页/策略广告
 ^https?:\/\/api\.xueqiu\.com\/snowpard\/launch_strategy\/query(\.json)? url reject-dict
-
 # 用户资料页广告
 ^https?:\/\/api\.xueqiu\.com\/ucprofile\/api\/user\/batchGetUserBasicInfo url reject-dict
-
 # 推荐页广告
 ^https?:\/\/api\.xueqiu\.com\/statuses\/recommend_timeline(\.json)? url reject-dict
-
 # Feed 流广告
 ^https?:\/\/api\.xueqiu\.com\/statuses\/(hot|friends_timeline|stock_timeline|status_query) url reject-dict
-
 # 详情页广告
 ^https?:\/\/api\.xueqiu\.com\/statuses\/status_detail url reject-dict
-
 # 搜索 banner 广告
 ^https?:\/\/api\.xueqiu\.com\/search\/trends\/v2 url reject-dict
-
 # 其他广告位
 ^https?:\/\/api\.xueqiu\.com\/snowpard\/ad_strategy url reject-dict
 
+# ========== 雪球去广告配置 ==========
+[Rewrite]
+# 拦截可能携带广告的接口
+^https?:\/\/api\.xueqiu\.com\/.*(timeline_tab_name|analysis\/home\/my_tab\.json) url script-response-body https://raw.githubusercontent.com/SecretGuestZ/Rules-Scripts/main/Resource/js/snowball_ad.js
 
 [Script]
-http-response ^https?:\/\/api\.xueqiu\.com\/.*(timeline_tab_name|analysis\/home\/my_tab\.json) script-path=https://raw.githubusercontent.com/SecretGuestZ/Rules-Scripts/main/Resource/js/snowball_ad.js, requires-body=true, tag=雪球去广告
+# 自动清理广告字段
+https://raw.githubusercontent.com/SecretGuestZ/Rules-Scripts/main/Resource/js/snowball_ad.js = type=http-response,pattern=^https?:\/\/api\.xueqiu\.com\/.*(timeline_tab_name|analysis\/home\/my_tab\.json),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/SecretGuestZ/Rules-Scripts/main/Resource/js/snowball_ad.js
+
+# [Script]
+# http-response ^https?:\/\/api\.xueqiu\.com\/.*(timeline_tab_name|analysis\/home\/my_tab\.json) script-path=https://raw.githubusercontent.com/SecretGuestZ/Rules-Scripts/main/Resource/js/snowball_ad.js, requires-body=true, tag=雪球去广告
 
 
 [MITM]
