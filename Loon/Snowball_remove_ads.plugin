@@ -24,8 +24,6 @@
 # 其他广告位
 ^https?:\/\/api\.xueqiu\.com\/snowpard\/ad_strategy url reject-dict
 
-# ========== 雪球去广告配置 ==========
-[Rewrite]
 # 拦截可能携带广告的接口
 ^https?:\/\/api\.xueqiu\.com\/.*(timeline_tab_name|analysis\/home\/my_tab\.json) url script-response-body https://raw.githubusercontent.com/SecretGuestZ/Rules-Scripts/main/Resource/js/snowball_ad.js
 
