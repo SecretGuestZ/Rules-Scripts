@@ -24,12 +24,9 @@
 # 其他广告位
 ^https?:\/\/api\.xueqiu\.com\/snowpard\/ad_strategy url reject-dict
 
-# 拦截可能携带广告的接口
-^https?:\/\/api\.xueqiu\.com\/.*(timeline_tab_name|analysis\/home\/my_tab\.json) url script-response-body https://raw.githubusercontent.com/SecretGuestZ/Rules-Scripts/main/Resource/js/snowball_ad.js
-
 [Script]
-# 自动清理广告字段
-https://raw.githubusercontent.com/SecretGuestZ/Rules-Scripts/main/Resource/js/snowball_ad.js = type=http-response,pattern=^https?:\/\/api\.xueqiu\.com\/.*(timeline_tab_name|analysis\/home\/my_tab\.json),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/SecretGuestZ/Rules-Scripts/main/Resource/js/snowball_ad.js
+# 雪球去广告
+http-response ^https?:\/\/api\.xueqiu\.com\/.*(timeline_tab_name|analysis\/home\/my_tab\.json) requires-body=1, script-path=https://raw.githubusercontent.com/SecretGuestZ/Rules-Scripts/main/Resource/js/snowball_ad.js, tag=雪球去广告
 
 # [Script]
 # http-response ^https?:\/\/api\.xueqiu\.com\/.*(timeline_tab_name|analysis\/home\/my_tab\.json) script-path=https://raw.githubusercontent.com/SecretGuestZ/Rules-Scripts/main/Resource/js/snowball_ad.js, requires-body=true, tag=雪球去广告
