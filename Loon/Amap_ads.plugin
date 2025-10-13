@@ -64,4 +64,4 @@ http-response ^https?:\/\/.*\.amap\.com\/ws\/shield\/search\/new_hotword script-
 
 [Rule]
 # > 高德地图_广告域名直连
-DOMAIN-SUFFIX, optimus-ads.amap.com, direct
+DOMAIN-SUFFIX, optimus-ads.amap.com, DIRECT
