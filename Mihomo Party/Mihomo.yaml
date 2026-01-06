@@ -2,7 +2,7 @@
 # @Author            @ddgksf2013
 # @mihomo-party      https://github.com/mihomo-party-org/mihomo-party/releases
 # @howtouse          主界面添加本配置[覆写]，然后使用内置的[SubStore]添加机场，之后去[订阅管理]，在配置的[编辑信息]中绑定机场订阅，开启系统代理即可使用
-# @Modified          2024年10月18日 @SecretGuestZ
+# @Modified          2026/01/06 @SecretGuestZ
 #==========================================
 
 proxy-groups:
@@ -10,17 +10,20 @@ proxy-groups:
   - {name: 手动切换,  type: select, include-all: true,                                                                                                  icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Static.png            }
   - {name: AdBlock,  type: select, proxies: [REJECT, DIRECT],                                                                                          icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Adblock.png            }
   - {name: 哔哩哔哩,  type: select, proxies: [DIRECT, 香港节点, 台湾节点],                                                                               icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Bili.png               } 
-  - {name: OpenAi,   type: select, proxies: [美国节点, 台湾节点, 新加坡节点],                                                                            icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/OpenAI.png             }
-  - {name: MSProxy,  type: select, proxies: [手动切换, 自动选择, 香港节点, 日本节点, 台湾节点, 美国节点, 新加坡节点, 韩国节点, 加拿大节点, 英国节点],         icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Copilot.png  }
-  - {name: YouTube,  type: select, proxies: [手动切换, 自动选择, 香港节点, 日本节点, 台湾节点, 美国节点, 新加坡节点, 韩国节点, 加拿大节点, 英国节点],         icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/YouTube.png            }
+  - {name: ChatGPT,  type: select, proxies: [手动切换, 自动选择, 香港节点, 日本节点, 台湾节点, 美国节点, 新加坡节点, 韩国节点, 加拿大节点, 英国节点],         icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/OpenAI.png             }
+  - {name: Gemini,   type: select, proxies: [手动切换, 自动选择, 香港节点, 日本节点, 台湾节点, 美国节点, 新加坡节点, 韩国节点, 加拿大节点, 英国节点],         icon: https://raw.githubusercontent.com/SecretGuestZ/Rules-Scripts/main/Resource/Icons/gemini.png             }
+  - {name: Claude,   type: select, proxies: [手动切换, 自动选择, 香港节点, 日本节点, 台湾节点, 美国节点, 新加坡节点, 韩国节点, 加拿大节点, 英国节点],         icon: https://raw.githubusercontent.com/SecretGuestZ/Rules-Scripts/main/Resource/Icons/claude.png             }
   - {name: Google,   type: select, proxies: [手动切换, 自动选择, 香港节点, 日本节点, 台湾节点, 美国节点, 新加坡节点, 韩国节点, 加拿大节点, 英国节点],         icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Google.png             } 
+  - {name: Bing,     type: select, proxies: [手动切换, 自动选择, 香港节点, 日本节点, 台湾节点, 美国节点, 新加坡节点, 韩国节点, 加拿大节点, 英国节点],         icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Bing.png  }
+  - {name: Copilot,  type: select, proxies: [手动切换, 自动选择, 香港节点, 日本节点, 台湾节点, 美国节点, 新加坡节点, 韩国节点, 加拿大节点, 英国节点],         icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Copilot.png  }
+  - {name: X,        type: select, proxies: [手动切换, 自动选择, 香港节点, 日本节点, 台湾节点, 美国节点, 新加坡节点, 韩国节点, 加拿大节点, 英国节点],         icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/X.png        }
   - {name: Telegram, type: select, proxies: [手动切换, 自动选择, 香港节点, 日本节点, 台湾节点, 美国节点, 新加坡节点, 韩国节点, 加拿大节点, 英国节点],         icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Telegram.png           }
   - {name: Github,   type: select, proxies: [手动切换, 自动选择, 香港节点, 日本节点, 台湾节点, 美国节点, 新加坡节点, 韩国节点, 加拿大节点, 英国节点],         icon: https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/github.png             }
-  - {name: Twitter,  type: select, proxies: [手动切换, 自动选择, 香港节点, 日本节点, 台湾节点, 美国节点, 新加坡节点, 韩国节点, 加拿大节点, 英国节点],         icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/X.png        }
   - {name: Facebook, type: select, proxies: [手动切换, 自动选择, 香港节点, 日本节点, 台湾节点, 美国节点, 新加坡节点, 韩国节点, 加拿大节点, 英国节点],         icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Facebook.png }
+  - {name: YouTube,  type: select, proxies: [手动切换, 自动选择, 香港节点, 日本节点, 台湾节点, 美国节点, 新加坡节点, 韩国节点, 加拿大节点, 英国节点],         icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/YouTube.png            }
   - {name: 全球加速,  type: select, proxies: [手动切换, 自动选择, 香港节点, 日本节点, 台湾节点, 美国节点, 新加坡节点, 韩国节点, 加拿大节点, 英国节点],         icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png             }
-  - {name: 苹果服务,  type: select, proxies: [DIRECT, 手动切换, 自动选择, 香港节点, 日本节点, 台湾节点, 美国节点, 新加坡节点, 韩国节点, 加拿大节点, 英国节点], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Apple.png              }
-  - {name: 微软直连,  type: select, proxies: [手动切换, DIRECT, 自动选择, 香港节点, 日本节点, 台湾节点, 美国节点, 新加坡节点, 韩国节点, 加拿大节点, 英国节点], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Microsoft.png          }
+  # - {name: 苹果服务,  type: select, proxies: [DIRECT, 手动切换, 自动选择, 香港节点, 日本节点, 台湾节点, 美国节点, 新加坡节点, 韩国节点, 加拿大节点, 英国节点], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Apple.png              }
+  # - {name: 微软直连,  type: select, proxies: [手动切换, DIRECT, 自动选择, 香港节点, 日本节点, 台湾节点, 美国节点, 新加坡节点, 韩国节点, 加拿大节点, 英国节点], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Microsoft.png          }
   - {name: 兜底分流,  type: select, proxies: [手动切换, 自动选择, 香港节点, 日本节点, 台湾节点, 美国节点, 新加坡节点, 韩国节点, 加拿大节点, 英国节点],         icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Final.png              }
   
 #节点分组
@@ -38,42 +41,47 @@ proxy-groups:
 rule-providers:
   Direct:      {behavior: classical, interval: 86400, format: yaml, type: http, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Direct/Direct.yaml ,         path: ./ruleset/Direct.yaml       }
   AdBlock:     {behavior: domain,    interval: 86400, format: text, type: http, url: https://raw.githubusercontent.com/Cats-Team/AdRules/main/adrules_domainset.txt ,                              path: ./ruleset/AdBlock.txt       }
-  Download:    {behavior: classical, interval: 86400, format: yaml, type: http, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Download/Download.yaml ,     path: ./ruleset/Download.yaml     }
+  # Download:    {behavior: classical, interval: 86400, format: yaml, type: http, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Download/Download.yaml ,     path: ./ruleset/Download.yaml     }
   BiliBili:    {behavior: classical, interval: 86400, format: yaml, type: http, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/BiliBili/BiliBili.yaml ,     path: ./ruleset/BiliBili.yaml     }
-  OpenAi:      {behavior: classical, interval: 86400, format: yaml, type: http, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OpenAI/OpenAI.yaml ,         path: ./ruleset/OpenAi.yaml       }
+  ChatGPT:     {behavior: classical, interval: 86400, format: yaml, type: http, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OpenAI/OpenAI.yaml ,         path: ./ruleset/ChatGPT.yaml      }
+  Gemini:      {behavior: classical, interval: 86400, format: yaml, type: http, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Gemini/Gemini.yaml ,         path: ./ruleset/Gemini.yaml       }
+  Claude:      {behavior: classical, interval: 86400, format: yaml, type: http, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Anthropic/Anthropic.yaml ,   path: ./ruleset/Claude.yaml       }
+  Google:      {behavior: classical, interval: 86400, format: yaml, type: http, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Google/Google.yaml ,         path: ./ruleset/Google.yaml       }
   Bing:        {behavior: classical, interval: 86400, format: yaml, type: http, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Bing/Bing.yaml ,             path: ./ruleset/Bing.yaml         }
   Copilot:     {behavior: classical, interval: 86400, format: yaml, type: http, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.yaml ,       path: ./ruleset/Copilot.yaml      }
-  YouTube:     {behavior: classical, interval: 86400, format: yaml, type: http, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTube/YouTube.yaml ,       path: ./ruleset/YouTube.yaml      }
-  Google:      {behavior: classical, interval: 86400, format: yaml, type: http, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Google/Google.yaml ,         path: ./ruleset/Google.yaml       }
+  X:           {behavior: classical, interval: 86400, format: yaml, type: http, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Twitter/Twitter.yaml ,       path: ./ruleset/X.yaml            }
   Telegram:    {behavior: classical, interval: 86400, format: yaml, type: http, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Telegram/Telegram.yaml ,     path: ./ruleset/Telegram.yaml     }
   Github:      {behavior: classical, interval: 86400, format: yaml, type: http, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GitHub/GitHub.yaml ,         path: ./ruleset/Github.yaml       }
-  Twitter:     {behavior: classical, interval: 86400, format: yaml, type: http, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Twitter/Twitter.yaml ,       path: ./ruleset/Twitter.yaml      }
   Facebook:    {behavior: classical, interval: 86400, format: yaml, type: http, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Facebook/Facebook.yaml ,     path: ./ruleset/Facebook.yaml     }
+  YouTube:     {behavior: classical, interval: 86400, format: yaml, type: http, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTube/YouTube.yaml ,       path: ./ruleset/YouTube.yaml      }
   ProxyLite:   {behavior: classical, interval: 86400, format: yaml, type: http, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ProxyLite/ProxyLite.yaml ,   path: ./ruleset/ProxyLite.yaml    }
-  Apple:       {behavior: classical, interval: 86400, format: yaml, type: http, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Apple/Apple_Classical.yaml , path: ./ruleset/Apple.yaml        }
-  Microsoft:   {behavior: classical, interval: 86400, format: yaml, type: http, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Microsoft/Microsoft.yaml ,   path: ./ruleset/Microsoft.yaml    }
+  # Apple:       {behavior: classical, interval: 86400, format: yaml, type: http, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Apple/Apple_Classical.yaml , path: ./ruleset/Apple.yaml        }
+  # Microsoft:   {behavior: classical, interval: 86400, format: yaml, type: http, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Microsoft/Microsoft.yaml ,   path: ./ruleset/Microsoft.yaml    }
   Lan:         {behavior: classical, interval: 86400, format: yaml, type: http, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Lan/Lan.yaml ,               path: ./ruleset/Lan.yaml          }
   China:       {behavior: classical, interval: 86400, format: yaml, type: http, url: https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/main/ruleset/ASN.China.yaml ,                      path: ./ruleset/ASN.China.yaml    }
   
 # 分流Policy 
 rules:
-  - RULE-SET,Direct,DIRECT
-  - RULE-SET,AdBlock,AdBlock
-  - RULE-SET,Download,DIRECT
-  - RULE-SET,BiliBili,哔哩哔哩
-  - RULE-SET,OpenAi, OpenAi
-  - RULE-SET,Bing, MSProxy
-  - RULE-SET,Copilot, MSProxy
-  - RULE-SET,YouTube,YouTube
-  - RULE-SET,Google,Google
-  - RULE-SET,Telegram,Telegram
+  - RULE-SET,Direct, DIRECT
+  - RULE-SET,AdBlock, AdBlock
+  # - RULE-SET,Download,DIRECT
+  - RULE-SET,BiliBili, 哔哩哔哩
+  - RULE-SET,ChatGPT, ChatGPT
+  - RULE-SET,Gemini, Gemini
+  - RULE-SET,Claude, Claude
+  - RULE-SET,Google, Google
+  - RULE-SET,Bing, Bing
+  - RULE-SET,Copilot, Copilot
+  - RULE-SET,X, X
+  - RULE-SET,Telegram, Telegram
   - RULE-SET,Github, Github
-  - RULE-SET,Twitter,Twitter
-  - RULE-SET,Facebook,Facebook
-  - RULE-SET,ProxyLite,全球加速
-  - RULE-SET,Apple,苹果服务
-  - RULE-SET,Microsoft,微软直连
-  - RULE-SET,China,DIRECT
-  - RULE-SET,Lan,DIRECT
-  - GEOIP,CN,DIRECT
-  - MATCH,兜底分流
+  - RULE-SET,Facebook, Facebook
+  - RULE-SET,YouTube, YouTube
+  - RULE-SET,ProxyLite, 全球加速
+  # - RULE-SET,Apple,苹果服务
+  # - RULE-SET,Microsoft,微软直连
+  - RULE-SET,Lan, DIRECT
+  - RULE-SET,China, DIRECT
+  - GEOIP,CN, DIRECT
+  - MATCH, 兜底分流
+
