@@ -1,13 +1,41 @@
 # From RuleGO:https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Proxy.list
-# Modified: @SecretGuestZ 2024-11-01 10:20:40
+# Modified: @SecretGuestZ 2026/01/07
+
+# ########AI########
+# Apple Intelligence
+DOMAIN-SUFFIX,smoot.apple.com
+DOMAIN,apple-relay.apple.com
+DOMAIN,apple-relay.cloudflare.com
+DOMAIN,apple-relay.fastly-edge.com
+DOMAIN-SUFFIX,gateway.icloud.com
+DOMAIN,cp4.cloudflare.com
+DOMAIN,guzzoni.apple.com
+DOMAIN,gspe1-ssl.ls.apple.com
+DOMAIN-SUFFIX,apps.mzstatic.com
+# Cloudflare
+# > AI Gateway
+DOMAIN,gateway.ai.cloudflare.com
+# Cursor
+DOMAIN-SUFFIX,cursor-cdn.com
+DOMAIN-SUFFIX,cursor.com
+DOMAIN-SUFFIX,cursor.sh
+DOMAIN-SUFFIX,cursorapi.com
+# JetBrains AI
+DOMAIN-SUFFIX,grazie.ai
+# Perplexity
+DOMAIN-SUFFIX,perplexity.ai
+DOMAIN-SUFFIX,pplx.ai
+DOMAIN,pplx-res.cloudinary.com
 
 # Proxy
+DOMAIN-SUFFIX,500px.com
 DOMAIN-SUFFIX,9cache.com
 DOMAIN-SUFFIX,9gag.com
 DOMAIN-SUFFIX,abc.com
 DOMAIN-SUFFIX,about.me
 DOMAIN-SUFFIX,anchor.fm
 DOMAIN-SUFFIX,annas-archive.org
+DOMAIN-SUFFIX,aomedia.org
 DOMAIN-SUFFIX,apkmirror.com
 DOMAIN-SUFFIX,apkpure.com
 DOMAIN-SUFFIX,archive.md
@@ -27,6 +55,8 @@ DOMAIN-SUFFIX,blubrry.com
 DOMAIN-SUFFIX,box.com
 DOMAIN-SUFFIX,brave.com
 DOMAIN-SUFFIX,bullguard.com
+DOMAIN-SUFFIX,cachefly.com
+DOMAIN-SUFFIX,cachefly.net
 DOMAIN-SUFFIX,castbox.fm
 DOMAIN-SUFFIX,change.org
 DOMAIN-SUFFIX,civitai.com
@@ -37,13 +67,16 @@ DOMAIN-SUFFIX,comparitech.com
 DOMAIN-SUFFIX,conoha.jp
 DOMAIN-SUFFIX,coursehero.com
 DOMAIN-SUFFIX,c-span.org
+DOMAIN-SUFFIX,cutout.pro
 DOMAIN-SUFFIX,dailymotion.com
+DOMAIN-SUFFIX,dashlane.com
 DOMAIN-SUFFIX,daum.net
 DOMAIN-SUFFIX,deadline.com
 DOMAIN-SUFFIX,depositphotos.com
 DOMAIN-SUFFIX,deviantart.com
 DOMAIN-SUFFIX,deviantart.net
 DOMAIN-SUFFIX,devv.ai
+DOMAIN-SUFFIX,dify.ai
 DOMAIN-SUFFIX,disconnect.me
 DOMAIN-SUFFIX,disqus.com
 DOMAIN-SUFFIX,dlive.tv
@@ -68,12 +101,15 @@ DOMAIN-SUFFIX,getsync.com
 DOMAIN-SUFFIX,gfw.report
 DOMAIN-SUFFIX,git.io
 DOMAIN-SUFFIX,githack.com
+DOMAIN-SUFFIX,glarity.app
 DOMAIN-SUFFIX,godaddy.com
 DOMAIN-SUFFIX,goodreads.com
 DOMAIN-SUFFIX,graphql.org
+DOMAIN-SUFFIX,greasyfork.org
 DOMAIN-SUFFIX,gumroad.com
 DOMAIN-SUFFIX,hackmd.io
 DOMAIN-SUFFIX,heroku.com
+DOMAIN-SUFFIX,herokuapp.com
 DOMAIN-SUFFIX,hiccears.com
 DOMAIN-SUFFIX,hket.com
 DOMAIN-SUFFIX,huffpost.com
@@ -179,6 +215,7 @@ DOMAIN-SUFFIX,time.com
 DOMAIN-SUFFIX,tineye.com
 DOMAIN-SUFFIX,tiny.cc
 DOMAIN-SUFFIX,torproject.org
+DOMAIN-SUFFIX,tortoisesvn.net
 DOMAIN-SUFFIX,tradingview.com
 DOMAIN-SUFFIX,turbobit.net
 DOMAIN-SUFFIX,tutanota.com
@@ -221,14 +258,8 @@ DOMAIN,lab.skk.moe
 DOMAIN,ocsp.int-x3.letsencrypt.org
 DOMAIN,search.arc.net
 # > Akamai
-DOMAIN,a248.e.akamai.net
+# DOMAIN,a248.e.akamai.net
 DOMAIN,a771.dscq.akamai.net
-# > Amazon
-DOMAIN-SUFFIX,amazon.co.jp
-DOMAIN,d3c33hcgiwev3.cloudfront.net
-DOMAIN,payments-jp.amazon.com
-DOMAIN,s3-ap-northeast-1.amazonaws.com
-DOMAIN,s3-ap-southeast-2.amazonaws.com
 # > Automattic
 DOMAIN-SUFFIX,gravatar.com
 DOMAIN-SUFFIX,tumblr.com
@@ -267,7 +298,7 @@ DOMAIN-SUFFIX,mexc.com
 DOMAIN-SUFFIX,probit.com
 DOMAIN-SUFFIX,uniswap.org
 DOMAIN-SUFFIX,upbit.com
-# > Binane
+# > Binance
 DOMAIN-SUFFIX,binance.com
 DOMAIN-SUFFIX,binance.info
 DOMAIN-SUFFIX,bnbstatic.com
@@ -294,19 +325,20 @@ DOMAIN-SUFFIX,dropboxapi.com
 DOMAIN-SUFFIX,dropboxusercontent.com
 # > Fastly
 DOMAIN-SUFFIX,freetls.fastly.net
-DOMAIN,cloud-cdn-digitalocean-com.global.ssl.fastly.net
+DOMAIN-SUFFIX,global.ssl.fastly.net
 # > Financial Times
 DOMAIN-SUFFIX,ft.com
 DOMAIN-SUFFIX,ftchinese.com
 DOMAIN-SUFFIX,ftimg.net
-DOMAIN,d1e00ek4ebabms.cloudfront.net
-DOMAIN,d19eijqb5qll1w.cloudfront.net
+# DOMAIN,d1e00ek4ebabms.cloudfront.net
+# DOMAIN,d19eijqb5qll1w.cloudfront.net
 # > Pinterest
 DOMAIN-SUFFIX,pinimg.com
 DOMAIN-KEYWORD,.pinterest.
 # > pixiv
 DOMAIN-SUFFIX,pixiv.net
 DOMAIN-SUFFIX,pixiv.org
+DOMAIN-SUFFIX,pixivsketch.net
 DOMAIN-SUFFIX,pximg.net
 # > Reddit
 DOMAIN-SUFFIX,redd.it
@@ -362,12 +394,15 @@ DOMAIN-SUFFIX,singlelogin.rs
 DOMAIN-SUFFIX,z-lib.gs
 DOMAIN-SUFFIX,z-library.rs
 # (Region-Restricted Access Denied)
+DOMAIN-SUFFIX,cnbeta.com.tw
 DOMAIN-SUFFIX,engadget.com
 DOMAIN-SUFFIX,ifixit.com
 DOMAIN-SUFFIX,terabox.com
 DOMAIN-SUFFIX,wowhead.com
+DOMAIN-SUFFIX,wunderground.com
 DOMAIN-SUFFIX,xiaomi.eu
 DOMAIN-SUFFIX,zaobao.com.sg
+DOMAIN-SUFFIX,zoominfo.com
 DOMAIN-SUFFIX,zoom.us
 DOMAIN,addons.mozilla.org
 DOMAIN,community.oneplus.com
@@ -378,18 +413,13 @@ DOMAIN,new.c.mi.com
 
 # > Apple
 DOMAIN-SUFFIX,appsto.re // Apple URL Shortener
-DOMAIN-SUFFIX,smoot.apple.com // Spotlight
+# DOMAIN-SUFFIX,smoot.apple.com // Spotlight
 DOMAIN,amp-api.podcasts.apple.com // Podcasts
 DOMAIN,beta.music.apple.com // Apple Music Web
 DOMAIN,books.itunes.apple.com // iBooks Store download
 DOMAIN,facetime.apple.com // FaceTime Links
 DOMAIN,lookup-api.apple.com // Look Up
 DOMAIN,radio.itunes.apple.com // Apple Music Radio
-# Apple Intelligence
-DOMAIN,apple-relay.apple.com 
-DOMAIN,apple-relay.cloudflare.com
-DOMAIN,apple-relay.fastly-edge.com
-DOMAIN,cp4.cloudflare.com
 #  Web Preview
 # DOMAIN,apps.apple.com
 # DOMAIN,books.apple.com
@@ -406,7 +436,7 @@ DOMAIN,news-client.apple.com
 DOMAIN,news-client-search.apple.com
 DOMAIN,news-edge.apple.com
 DOMAIN,news-events.apple.com
-OMAIN,apple.comscoreresearch.com
+DOMAIN,apple.comscoreresearch.com
 # AppleTV 由iRingo插件处理
 DOMAIN,np-edge.itunes.apple.com
 DOMAIN,play-edge.itunes.apple.com
@@ -431,7 +461,7 @@ DOMAIN-SUFFIX,skype.com
 
 # From ACL4SSR: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/ProxyLite.list
 # 已去重，并删除国外域名等
-# Modified  @SecretGuestZ 2024-11-01 10:20:04
+# Modified 2026/01/07
 
 # MyList && Other
 DOMAIN-SUFFIX,1password.com
@@ -473,7 +503,7 @@ DOMAIN-SUFFIX,blogsmithmedia.com
 DOMAIN-SUFFIX,blogspot.com
 DOMAIN-SUFFIX,blogspot.hk
 DOMAIN-SUFFIX,blogspot.jp
-DOMAIN-SUFFIX,cachefly.net
+# DOMAIN-SUFFIX,cachefly.net
 DOMAIN-SUFFIX,cdnst.net
 DOMAIN-SUFFIX,cloudfront.net
 DOMAIN-SUFFIX,comodoca.com
@@ -507,7 +537,7 @@ DOMAIN-SUFFIX,nintendo.net
 DOMAIN-SUFFIX,nsstatic.net
 DOMAIN-SUFFIX,overcast.fm
 DOMAIN-SUFFIX,periscope.tv
-DOMAIN-SUFFIX,pinterest.com
+# DOMAIN-SUFFIX,pinterest.com
 DOMAIN-SUFFIX,potato.im
 DOMAIN-SUFFIX,prfct.co
 DOMAIN-SUFFIX,pscp.tv
@@ -551,9 +581,6 @@ IP-CIDR,54.230.156.0/22,no-resolve
 # BBC
 DOMAIN-KEYWORD,uk-live
 DOMAIN-SUFFIX,bbc.co
-# Claude
-DOMAIN-SUFFIX,claude.ai
-DOMAIN-SUFFIX,anthropic.com
 # Developer 开发者常用国外网站、镜像和论坛
 DOMAIN-SUFFIX,apache.org
 DOMAIN-SUFFIX,docker.io
@@ -573,9 +600,9 @@ DOMAIN-SUFFIX,spring.io
 DOMAIN-SUFFIX,spring.net
 DOMAIN-SUFFIX,stackoverflow.com
 # Docker
-DOMAIN,d1q6f0aelx0por.cloudfront.net
-DOMAIN,d2wy8f7a9ursnm.cloudfront.net
-DOMAIN,d36jcksde1wxzq.cloudfront.net
+# DOMAIN,d1q6f0aelx0por.cloudfront.net
+# DOMAIN,d2wy8f7a9ursnm.cloudfront.net
+# DOMAIN,d36jcksde1wxzq.cloudfront.net
 DOMAIN-SUFFIX,compose-spec.io
 DOMAIN-SUFFIX,dockerhub.com
 # Discord
@@ -606,8 +633,6 @@ DOMAIN-SUFFIX,xnxx.com
 DOMAIN-SUFFIX,xvideos-cdn.com
 DOMAIN-SUFFIX,xvideos.com
 DOMAIN-SUFFIX,ypncdn.com
-# Pixiv
-DOMAIN-SUFFIX,fanbox.cc
 # Spark
 DOMAIN-SUFFIX,amplitude.com
 DOMAIN-SUFFIX,hockeyapp.net
@@ -635,11 +660,12 @@ DOMAIN-SUFFIX,tap.io
 DOMAIN-SUFFIX,taptap.tw
 # Twitch
 DOMAIN-SUFFIX,twitch.tv
-DOMAIN-SUFFIX,ttvnw.net
+# DOMAIN-SUFFIX,ttvnw.net
 DOMAIN-KEYWORD,ttvnw
 # TeraBox
 DOMAIN-SUFFIX,teraboxcdn.com
 # Zoom
+# DOMAIN-SUFFIX,zoom.us
 DOMAIN-SUFFIX,zoomgov.com
 #飞流直播
 DOMAIN-SUFFIX,neulion.com
