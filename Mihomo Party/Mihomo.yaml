@@ -8,7 +8,7 @@
 proxy-groups:
 #分流分组
   - {name: 手动切换,  type: select, include-all: true,                                                                                                  icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Static.png            }
-  - {name: Direct,   type: select, proxies: [DIRECT],                                                                                                  icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Urltest.png            }
+  - {name: Direct,   type: select, proxies: [DIRECT],                                                                                                  icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Available.png          }
   - {name: AdBlock,  type: select, proxies: [REJECT],                                                                                                  icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Adblock.png            }
   - {name: 哔哩哔哩,  type: select, proxies: [DIRECT, 香港节点, 台湾节点],                                                                               icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Bili.png               } 
   - {name: ChatGPT,  type: select, proxies: [手动切换, 自动选择, 香港节点, 日本节点, 台湾节点, 美国节点, 新加坡节点, 韩国节点, 加拿大节点, 英国节点],         icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/OpenAI.png             }
@@ -85,6 +85,7 @@ rules:
   - RULE-SET,China, DIRECT
   - GEOIP,CN, DIRECT
   - MATCH, 兜底分流
+
 
 
 
