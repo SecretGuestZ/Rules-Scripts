@@ -1,0 +1,10 @@
+# 2026/01/15
+
+# claude
+payload:
+  - DOMAIN-SUFFIX,servd-anthropic-website.b-cdn.net
+  - DOMAIN-SUFFIX,anthropic.com
+  - DOMAIN-SUFFIX,claude.ai
+  - DOMAIN-SUFFIX,claude.com
+  - DOMAIN-SUFFIX,claudeusercontent.com
+  - DOMAIN-SUFFIX,claudemcpclient.com
