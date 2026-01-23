@@ -5,58 +5,47 @@
 # ==========================================
 
 # 1. 基础设置 (基于 Pro 版优化)
-mixed-port: 7890
-allow-lan: true
-bind-address: '*'
 mode: rule
-log-level: info
-ipv6: true          # 开启内核对 IPv6 的全局支持
-find-process-mode: always
-tcp-concurrent: true
+mixed-port: 7893
+ipv6: false                 # macOS 环境下建议关闭以减少网络抖动
+allow-lan: false            # 已按要求关闭，提升本机安全性
+unified-delay: true
+tcp-concurrent: true        # M3 芯片并行处理能力强，建议开启
+log-level: warning
+find-process-mode: 'always' # 精准识别 macOS 应用进程
 global-client-fingerprint: chrome
-
+# 针对 M3 芯片优化：允许 GSO 硬件加速以降低 CPU 占用
+experimental:
+  quic-go-disable-gso: false
+  
 # 2. 流量嗅探 (Pro 版核心: 解决域名分流不准的问题)
 sniffer:
   enable: true
-  parse-pure-ip: true
   sniff:
-    TLS:
-      ports: [443, 8443]
-    HTTP:
-      ports: [80, 8080-8880]
-      override-destination: true
+    HTTP: {ports: [80, 8080-8880], override-destination: true}
+    TLS: {ports: [443, 8443]}
+    QUIC: {ports: [443, 8443]}
+  skip-domain:
+    - '+.apple.com'          # 排除 Apple 服务防止推送异常
+    - 'Mijia Cloud'
 
 # 3. DNS 设置 (Pro 版核心: 极致秒开体验)
 dns:
   enable: true
-  ipv6: true           # 允许内核解析 AAAA (IPv6) 记录
-  listen: 0.0.0.0:1053
+  ipv6: false
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
-  fake-ip-filter:
-    - '*'
-    - '+.lan'
-    - '+.local'
-  # 注意：如果使用 IPv6，建议在 nameserver 中加入支持 IPv6 的服务器
   nameserver:
-    - 223.5.5.5
-    - 2400:3200::1           # 阿里公共 DNS IPv6 版
-    - 119.29.29.29
-    - 2402:4e00::            # 腾讯公共 DNS IPv6 版
-  proxy-server-nameserver:
-    - 1.1.1.1
-    - 8.8.8.8
+    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
 
 # 4. TUN 模式设置 (适合 Mac 全局代理)
 tun:
   enable: true
-  stack: mixed            # 必须使用 mixed 或 gvisor 栈以支持双栈
+  stack: system             # macOS Tahoe 建议使用系统协议栈
   auto-route: true
-  auto-detect-interface: true
-  # 如果你的网络环境支持，可以显式开启内置 IPv6 地址映射
-  inet6-address: [2001:0470:f9da:f22a::1/64]
-  dns-hijack:
-    - any:53
+  auto-redirect: true
+  auto-detect-interface: true   # 自动适应 MacBook 切换 WiFi
 
 # 5. 节点提供者 (请在此处粘贴你的机场订阅链接)
 proxy-providers:
@@ -123,6 +112,8 @@ rule-providers:
 rules:
   - RULE-SET,Direct, DIRECT
   - RULE-SET,AdBlock, REJECT
+  # 2. 核心优化：阻止海外 QUIC 流量以强制退回更稳定的 TCP
+  - AND,((DST-PORT,443),(NETWORK,UDP),(NOT,((GEOIP,CN)))),REJECT
   - RULE-SET,BiliBili, 哔哩哔哩
   - RULE-SET,ChatGPT, ChatGPT
   - RULE-SET,Gemini, Gemini
