@@ -15,7 +15,7 @@ http://hwltc.tv.cdn.zj.chinamobile.com/PLTV/88888888/224/3221236442/index.m3u8
 http://hwltc.tv.cdn.zj.chinamobile.com/PLTV/88888888/224/3221236444/index.m3u8
 #EXTINF:-1 tvg-id="CCTV5+" tvg-name="CCTV5+" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/CCTV5+.png" group-title="央视",CCTV5+
 http://hwltc.tv.cdn.zj.chinamobile.com/PLTV/88888888/224/3221236306/index.m3u8
-#EXTINF:-1 tvg-id="CCTV6" tvg-name="CCTV6" http-user-agent="AptvPlayer-UA" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/CCTV6.png" group-title="央视",CCTV6
+#EXTINF:-1 tvg-id="CCTV6" tvg-name="CCTV6" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/CCTV6.png" group-title="央视",CCTV6
 http://101.35.240.114:88/live.php?id=CCTV6
 #EXTINF:-1 tvg-id="CCTV7" tvg-name="CCTV7" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/CCTV7.png" group-title="央视",CCTV7
 http://hwltc.tv.cdn.zj.chinamobile.com/PLTV/88888888/224/3221236219/index.m3u8
