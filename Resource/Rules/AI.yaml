@@ -19,7 +19,6 @@ payload:
   - DOMAIN-SUFFIX,claude.com
   - DOMAIN-SUFFIX,anthropic.com
   - DOMAIN-SUFFIX,claudeusercontent.com
-  - DOMAIN,cdn.usefathom.com
 
   # OpenAI / ChatGPT
   - DOMAIN-SUFFIX,chat.com
@@ -30,9 +29,6 @@ payload:
   - DOMAIN-SUFFIX,openai.com
   - DOMAIN-SUFFIX,sora.com
   - DOMAIN-SUFFIX,ai.com
-  - DOMAIN,api.statsig.com
-  - DOMAIN,api-iam.intercom.io
-  - DOMAIN,o33249.ingest.sentry.io
   - DOMAIN-KEYWORD,openaiapi
   - DOMAIN-KEYWORD,openaicom
 
@@ -42,11 +38,17 @@ payload:
   # Cloudflare AI Gateway
   - DOMAIN,gateway.ai.cloudflare.com
 
+  # Cohere
+  - DOMAIN-SUFFIX,cohere.com
+
   # Cursor
   - DOMAIN-SUFFIX,cursor-cdn.com
   - DOMAIN-SUFFIX,cursor.com
   - DOMAIN-SUFFIX,cursor.sh
   - DOMAIN-SUFFIX,cursorapi.com
+
+  # DeepL
+  - DOMAIN-SUFFIX,deepl.com
 
   # Dify AI
   - DOMAIN-SUFFIX,dify.ai
@@ -75,6 +77,10 @@ payload:
   # Groq
   - DOMAIN-SUFFIX,groq.com
 
+  # Hugging Face
+  - DOMAIN-SUFFIX,huggingface.co
+  - DOMAIN-SUFFIX,hf.co
+
   # JetBrains AI
   - DOMAIN-SUFFIX,grazie.ai
 
@@ -95,6 +101,9 @@ payload:
 
   # Midjourney
   - DOMAIN-SUFFIX,midjourney.com
+
+  # Mistral AI
+  - DOMAIN-SUFFIX,mistral.ai
 
   # Perplexity
   - DOMAIN-SUFFIX,perplexity.ai
