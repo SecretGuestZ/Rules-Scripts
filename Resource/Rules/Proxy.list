@@ -1,32 +1,6 @@
 # From RuleGO:https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Proxy.list
 # Modified: @SecretGuestZ 2026/01/07
 
-# ########AI########
-# Apple Intelligence
-DOMAIN-SUFFIX,smoot.apple.com
-DOMAIN,apple-relay.apple.com
-DOMAIN,apple-relay.cloudflare.com
-DOMAIN,apple-relay.fastly-edge.com
-DOMAIN-SUFFIX,gateway.icloud.com
-DOMAIN,cp4.cloudflare.com
-DOMAIN,guzzoni.apple.com
-DOMAIN,gspe1-ssl.ls.apple.com
-DOMAIN-SUFFIX,apps.mzstatic.com
-# Cloudflare
-# > AI Gateway
-DOMAIN,gateway.ai.cloudflare.com
-# Cursor
-DOMAIN-SUFFIX,cursor-cdn.com
-DOMAIN-SUFFIX,cursor.com
-DOMAIN-SUFFIX,cursor.sh
-DOMAIN-SUFFIX,cursorapi.com
-# JetBrains AI
-DOMAIN-SUFFIX,grazie.ai
-# Perplexity
-DOMAIN-SUFFIX,perplexity.ai
-DOMAIN-SUFFIX,pplx.ai
-DOMAIN,pplx-res.cloudinary.com
-
 # Proxy
 DOMAIN-SUFFIX,500px.com
 DOMAIN-SUFFIX,9cache.com
@@ -75,8 +49,6 @@ DOMAIN-SUFFIX,deadline.com
 DOMAIN-SUFFIX,depositphotos.com
 DOMAIN-SUFFIX,deviantart.com
 DOMAIN-SUFFIX,deviantart.net
-DOMAIN-SUFFIX,devv.ai
-DOMAIN-SUFFIX,dify.ai
 DOMAIN-SUFFIX,disconnect.me
 DOMAIN-SUFFIX,disqus.com
 DOMAIN-SUFFIX,dlive.tv
@@ -113,7 +85,6 @@ DOMAIN-SUFFIX,herokuapp.com
 DOMAIN-SUFFIX,hiccears.com
 DOMAIN-SUFFIX,hket.com
 DOMAIN-SUFFIX,huffpost.com
-DOMAIN-SUFFIX,huggingface.co
 DOMAIN-SUFFIX,i-cable.com
 DOMAIN-SUFFIX,imageglass.org
 DOMAIN-SUFFIX,imgur.com
@@ -161,10 +132,8 @@ DOMAIN-SUFFIX,pastie.org
 DOMAIN-SUFFIX,patreon.com
 DOMAIN-SUFFIX,pcloud.com
 DOMAIN-SUFFIX,peing.net
-# DOMAIN-SUFFIX,perplexity.ai
 DOMAIN-SUFFIX,player.fm
 DOMAIN-SUFFIX,podbean.com
-DOMAIN-SUFFIX,poe.com
 DOMAIN-SUFFIX,prism-break.org
 DOMAIN-SUFFIX,privoxy.org
 DOMAIN-SUFFIX,proton.me
@@ -495,7 +464,6 @@ DOMAIN-SUFFIX,aspnetcdn.com
 DOMAIN-SUFFIX,awsstatic.com
 DOMAIN-SUFFIX,azureedge.net
 DOMAIN-SUFFIX,azurewebsites.net
-# DOMAIN-SUFFIX,bing.com
 DOMAIN-SUFFIX,bkrtx.com
 DOMAIN-SUFFIX,blogcdn.com
 DOMAIN-SUFFIX,blogger.com
@@ -503,7 +471,6 @@ DOMAIN-SUFFIX,blogsmithmedia.com
 DOMAIN-SUFFIX,blogspot.com
 DOMAIN-SUFFIX,blogspot.hk
 DOMAIN-SUFFIX,blogspot.jp
-# DOMAIN-SUFFIX,cachefly.net
 DOMAIN-SUFFIX,cdnst.net
 DOMAIN-SUFFIX,cloudfront.net
 DOMAIN-SUFFIX,comodoca.com
@@ -526,7 +493,6 @@ DOMAIN-SUFFIX,jtvnw.net
 DOMAIN-SUFFIX,kat.cr
 DOMAIN-SUFFIX,kik.com
 DOMAIN-SUFFIX,kobobooks.com
-# DOMAIN-SUFFIX,live.net
 DOMAIN-SUFFIX,livefilestore.com
 DOMAIN-SUFFIX,llnwd.net
 DOMAIN-SUFFIX,macrumors.com
@@ -537,7 +503,6 @@ DOMAIN-SUFFIX,nintendo.net
 DOMAIN-SUFFIX,nsstatic.net
 DOMAIN-SUFFIX,overcast.fm
 DOMAIN-SUFFIX,periscope.tv
-# DOMAIN-SUFFIX,pinterest.com
 DOMAIN-SUFFIX,potato.im
 DOMAIN-SUFFIX,prfct.co
 DOMAIN-SUFFIX,pscp.tv
@@ -563,21 +528,6 @@ DOMAIN-SUFFIX,vox-cdn.com
 # Amazon
 DOMAIN-SUFFIX,amazon.com
 DOMAIN-SUFFIX,amazonaws.com
-IP-CIDR,13.32.0.0/15,no-resolve
-IP-CIDR,13.35.0.0/17,no-resolve
-IP-CIDR,18.184.0.0/15,no-resolve
-IP-CIDR,18.194.0.0/15,no-resolve
-IP-CIDR,18.208.0.0/13,no-resolve
-IP-CIDR,18.232.0.0/14,no-resolve
-IP-CIDR,52.58.0.0/15,no-resolve
-IP-CIDR,52.74.0.0/16,no-resolve
-IP-CIDR,52.77.0.0/16,no-resolve
-IP-CIDR,52.84.0.0/15,no-resolve
-IP-CIDR,52.200.0.0/13,no-resolve
-IP-CIDR,54.93.0.0/16,no-resolve
-IP-CIDR,54.156.0.0/14,no-resolve
-IP-CIDR,54.226.0.0/15,no-resolve
-IP-CIDR,54.230.156.0/22,no-resolve
 # BBC
 DOMAIN-KEYWORD,uk-live
 DOMAIN-SUFFIX,bbc.co
