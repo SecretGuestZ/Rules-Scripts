@@ -50,8 +50,8 @@ DOMAIN-SUFFIX,fbworkmail.com
 # DOMAIN-SUFFIX,instagram.com
 DOMAIN-SUFFIX,m.me
 DOMAIN-SUFFIX,messenger.com
-DOMAIN-SUFFIX,meta.ai
-DOMAIN-SUFFIX,meta.com
+# DOMAIN-SUFFIX,meta.ai
+# DOMAIN-SUFFIX,meta.com
 DOMAIN-SUFFIX,oculus.com
 DOMAIN-SUFFIX,oculuscdn.com
 DOMAIN-SUFFIX,readyatdawn.com
