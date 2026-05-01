@@ -2,7 +2,7 @@
 # @Author            @ddgksf2013
 # @mihomo-party      https://github.com/mihomo-party-org/mihomo-party/releases
 # @howtouse          主界面添加本配置[覆写]，然后使用内置的[SubStore]添加机场，之后去[订阅管理]，在配置的[编辑信息]中绑定机场订阅，开启系统代理即可使用
-# @Modified          2026/03/05 @SecretGuestZ
+# @Modified          2026/05/01 @SecretGuestZ
 #==========================================
 
 proxy-groups:
@@ -11,18 +11,18 @@ proxy-groups:
   # - {name: Direct,   type: select, proxies: [DIRECT],                                                                                                  icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Available.png          }
   # - {name: AdBlock,  type: select, proxies: [REJECT],                                                                                                  icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Adblock.png            }
   # - {name: 哔哩哔哩,  type: select, proxies: [DIRECT, 香港节点, 台湾节点],                                                                               icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Bili.png               } 
-  - {name: AI,       type: select, proxies: [手动切换, 自动选择, 香港节点, 日本节点, 台湾节点, 美国节点, 新加坡节点, 韩国节点, 加拿大节点, 英国节点],         icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/OpenAI.png             }
+  - {name: AI,       type: fallback, proxies: [美国节点, 韩国节点, 日本节点, 英国节点, 加拿大节点, 新加坡节点, 台湾节点],         icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/OpenAI.png             }
   #- {name: ChatGPT,  type: select, proxies: [手动切换, 自动选择, 香港节点, 日本节点, 台湾节点, 美国节点, 新加坡节点, 韩国节点, 加拿大节点, 英国节点],         icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/OpenAI.png             }
   #- {name: Gemini,   type: select, proxies: [手动切换, 自动选择, 香港节点, 日本节点, 台湾节点, 美国节点, 新加坡节点, 韩国节点, 加拿大节点, 英国节点],         icon: https://raw.githubusercontent.com/SecretGuestZ/Rules-Scripts/main/Resource/Icons/gemini.png             }
   #- {name: Claude,   type: select, proxies: [手动切换, 自动选择, 香港节点, 日本节点, 台湾节点, 美国节点, 新加坡节点, 韩国节点, 加拿大节点, 英国节点],         icon: https://raw.githubusercontent.com/SecretGuestZ/Rules-Scripts/main/Resource/Icons/claude.png             }
-  - {name: Google,   type: select, proxies: [手动切换, 自动选择, 香港节点, 日本节点, 台湾节点, 美国节点, 新加坡节点, 韩国节点, 加拿大节点, 英国节点],         icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Google.png             } 
-  - {name: YouTube,  type: select, proxies: [手动切换, 自动选择, 香港节点, 日本节点, 台湾节点, 美国节点, 新加坡节点, 韩国节点, 加拿大节点, 英国节点],         icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/YouTube.png            }
+  - {name: Google,   type: fallback, proxies: [美国节点, 韩国节点, 日本节点, 英国节点, 加拿大节点, 新加坡节点, 台湾节点],         icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Google.png             } 
+  - {name: YouTube,  type: fallback, proxies: [美国节点, 韩国节点, 日本节点, 英国节点, 加拿大节点, 新加坡节点, 台湾节点],         icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/YouTube.png            }
   #- {name: Bing,     type: select, proxies: [手动切换, 自动选择, 香港节点, 日本节点, 台湾节点, 美国节点, 新加坡节点, 韩国节点, 加拿大节点, 英国节点],         icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Bing.png  }
   #- {name: Copilot,  type: select, proxies: [手动切换, 自动选择, 香港节点, 日本节点, 台湾节点, 美国节点, 新加坡节点, 韩国节点, 加拿大节点, 英国节点],         icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Copilot.png  }
-  - {name: X,        type: select, proxies: [手动切换, 自动选择, 香港节点, 日本节点, 台湾节点, 美国节点, 新加坡节点, 韩国节点, 加拿大节点, 英国节点],         icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/X.png        }
-  - {name: Telegram, type: select, proxies: [手动切换, 自动选择, 香港节点, 日本节点, 台湾节点, 美国节点, 新加坡节点, 韩国节点, 加拿大节点, 英国节点],         icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Telegram.png           }
-  - {name: Github,   type: select, proxies: [手动切换, 自动选择, 香港节点, 日本节点, 台湾节点, 美国节点, 新加坡节点, 韩国节点, 加拿大节点, 英国节点],         icon: https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/github.png             }
-  - {name: Facebook, type: select, proxies: [手动切换, 自动选择, 香港节点, 日本节点, 台湾节点, 美国节点, 新加坡节点, 韩国节点, 加拿大节点, 英国节点],         icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Facebook.png }
+  - {name: X,        type: fallback, proxies: [韩国节点,日本节点,香港节点,美国节点,英国节点,新加坡节点,加拿大节点,台湾节点],         icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/X.png        }
+  - {name: Telegram, type: fallback, proxies: [韩国节点,日本节点,香港节点,美国节点,英国节点,新加坡节点,加拿大节点,台湾节点],         icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Telegram.png           }
+  - {name: Github,   type: fallback, proxies: [韩国节点,日本节点,香港节点,美国节点,英国节点,新加坡节点,加拿大节点,台湾节点],         icon: https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/github.png             }
+  - {name: Facebook, type: fallback, proxies: [韩国节点,日本节点,香港节点,美国节点,英国节点,新加坡节点,加拿大节点,台湾节点],         icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Facebook.png }
   - {name: 全球加速,  type: select, proxies: [手动切换, 自动选择, 香港节点, 日本节点, 台湾节点, 美国节点, 新加坡节点, 韩国节点, 加拿大节点, 英国节点],         icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png             }
   # - {name: 苹果服务,  type: select, proxies: [DIRECT, 手动切换, 自动选择, 香港节点, 日本节点, 台湾节点, 美国节点, 新加坡节点, 韩国节点, 加拿大节点, 英国节点], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Apple.png              }
   # - {name: 微软直连,  type: select, proxies: [手动切换, DIRECT, 自动选择, 香港节点, 日本节点, 台湾节点, 美国节点, 新加坡节点, 韩国节点, 加拿大节点, 英国节点], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Microsoft.png          }
