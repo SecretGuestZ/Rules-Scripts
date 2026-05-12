@@ -2,15 +2,12 @@
 # @Author            @ddgksf2013
 # @mihomo-party      https://github.com/mihomo-party-org/mihomo-party/releases
 # @howtouse          主界面添加本配置[覆写]，然后使用内置的[SubStore]添加机场，之后去[订阅管理]，在配置的[编辑信息]中绑定机场订阅，开启系统代理即可使用
-# @Modified          2026/05/01 @SecretGuestZ
+# @Modified          2026/05/12 @SecretGuestZ
 #==========================================
 
 proxy-groups:
 #分流分组
   - {name: 手动切换,  type: select, include-all: true,                                                                                                  icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Static.png            }
-  # - {name: Direct,   type: select, proxies: [DIRECT],                                                                                                  icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Available.png          }
-  # - {name: AdBlock,  type: select, proxies: [REJECT],                                                                                                  icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Adblock.png            }
-  # - {name: 哔哩哔哩,  type: select, proxies: [DIRECT, 香港节点, 台湾节点],                                                                               icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Bili.png               } 
   - {name: AI,       type: fallback, proxies: [美国节点, 韩国节点, 日本节点, 英国节点, 加拿大节点, 新加坡节点, 台湾节点],         icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/OpenAI.png             }
   #- {name: ChatGPT,  type: select, proxies: [手动切换, 自动选择, 香港节点, 日本节点, 台湾节点, 美国节点, 新加坡节点, 韩国节点, 加拿大节点, 英国节点],         icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/OpenAI.png             }
   #- {name: Gemini,   type: select, proxies: [手动切换, 自动选择, 香港节点, 日本节点, 台湾节点, 美国节点, 新加坡节点, 韩国节点, 加拿大节点, 英国节点],         icon: https://raw.githubusercontent.com/SecretGuestZ/Rules-Scripts/main/Resource/Icons/gemini.png             }
@@ -44,8 +41,6 @@ rule-providers:
   Lan:         {behavior: classical, interval: 86400, format: yaml, type: http, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Lan/Lan.yaml ,               path: ./ruleset/Lan.yaml          }
   Direct:      {behavior: classical, interval: 86400, format: yaml, type: http, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Direct/Direct.yaml ,         path: ./ruleset/Direct.yaml       }
   AdBlock:     {behavior: classical, interval: 86400, format: yaml, type: http, url: https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/Filters/AWAvenue-Ads-Rule-Clash-Classical.yaml ,  path: ./ruleset/AdBlock.yaml       }
-  # Download:    {behavior: classical, interval: 86400, format: yaml, type: http, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Download/Download.yaml ,     path: ./ruleset/Download.yaml     }
-  # BiliBili:    {behavior: classical, interval: 86400, format: yaml, type: http, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/BiliBili/BiliBili.yaml ,     path: ./ruleset/BiliBili.yaml     }
   AI:          {behavior: classical, interval: 86400, format: yaml, type: http, url: https://raw.githubusercontent.com/SecretGuestZ/Rules-Scripts/main/Resource/Rules/AI.yaml ,                    path: ./ruleset/AI.yaml      }
   #ChatGPT:     {behavior: classical, interval: 86400, format: yaml, type: http, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OpenAI/OpenAI.yaml ,         path: ./ruleset/ChatGPT.yaml      }
   #Gemini:      {behavior: classical, interval: 86400, format: yaml, type: http, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Gemini/Gemini.yaml ,         path: ./ruleset/Gemini.yaml       }
@@ -68,8 +63,6 @@ rules:
   - RULE-SET,Lan, DIRECT
   - RULE-SET,Direct, DIRECT
   - RULE-SET,AdBlock, REJECT
-  # - RULE-SET,Download,DIRECT
-  # - RULE-SET,BiliBili, 哔哩哔哩
   - RULE-SET,AI, AI
   #- RULE-SET,ChatGPT, ChatGPT
   #- RULE-SET,Gemini, Gemini
@@ -88,5 +81,3 @@ rules:
   # - RULE-SET,China, DIRECT
   - GEOIP,CN, DIRECT
   - MATCH, 兜底分流
-
-
