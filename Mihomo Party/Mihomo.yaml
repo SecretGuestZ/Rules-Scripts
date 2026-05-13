@@ -55,6 +55,6 @@ rules:
   - RULE-SET,Telegram, Telegram
   - RULE-SET,Github, Github
   - RULE-SET,Facebook, Facebook
-  - RULE-SET,ProxyLite, 全球加速
+  - RULE-SET,Proxy, 全球加速
   - GEOIP,CN, DIRECT
   - MATCH, 兜底分流
