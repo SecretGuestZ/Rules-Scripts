@@ -92,7 +92,7 @@ proxy-groups:
   - {name: 新加坡节点, type: url-test, include-all: true, url: https://www.google.com/generate_204, interval: 900, tolerance: 60, filter: "新|坡|SG|(?i)Singapore", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Singapore.png}
   - {name: 韩国节点,   type: url-test, include-all: true, url: https://www.google.com/generate_204, interval: 900, tolerance: 60, filter: "韩|KR|(?i)Korea", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Korea.png}
   - {name: 加拿大节点, type: url-test, include-all: true, url: https://www.google.com/generate_204, interval: 900, tolerance: 60, filter: "加|拿大|CA|(?i)Canada", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Canada.png}
-  - {name: 英国节点,   type: url-test, include-all: true, url: https://www.google.com/generate_204, interval: 900, tolerance: 60, filter: "英|GB|(?i)England|Britain", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_Kingdom.png}
+  - {name: 英国节点,   type: url-test, include-all: true, url: https://www.google.com/generate_204, interval: 900, tolerance: 60, filter: "英|(?i)England|Britain", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_Kingdom.png}
 
 # 7. 分流规则源 (完全采用 Party 版写法)
 rule-providers:
