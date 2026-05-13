@@ -41,7 +41,7 @@ rule-providers:
   Telegram: {behavior: ipcidr, interval: 86400, format: mrs, type: http, url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/telegram.mrs ,                    path: ./ruleset/Telegram.mrs  }
   Github:   {behavior: domain, interval: 86400, format: mrs, type: http, url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/github.mrs ,                    path: ./ruleset/GitHub.mrs    }
   Facebook: {behavior: domain, interval: 86400, format: mrs, type: http, url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/facebook.mrs ,                  path: ./ruleset/Facebook.mrs  }
-  Proxy:    {behavior: domain, interval: 86400, format: mrs, type: http, url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo-lite/geosite/proxy.mrs ,                     path: ./ruleset/Proxy.mrs     }
+  Proxy:    {behavior: domain, interval: 86400, format: mrs, type: http, url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo-lite/geosite/proxy.mrs ,                path: ./ruleset/Proxy.mrs     }
    
 # 分流Policy 
 rules:
