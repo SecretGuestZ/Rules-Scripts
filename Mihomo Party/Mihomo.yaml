@@ -7,7 +7,7 @@
 
 proxy-groups:
 #分流分组
-  - {name: 手动切换,  type: select, include-all: true,                                                                                                                                          icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Static.png            }
+  - {name: 手动切换,  type: select, include-all: true,                                                                                                                                      icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Static.png            }
   - {name: AI,       type: fallback, url: https://generativelanguage.googleapis.com,     interval: 900, proxies: [美国节点, 新加坡节点, 日本节点, 韩国节点, 英国节点, 加拿大节点, 台湾节点],         icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/OpenAI.png             }
   - {name: Google,   type: fallback, url: https://www.google.com/generate_204,           interval: 900, proxies: [美国节点, 新加坡节点, 日本节点, 韩国节点, 英国节点, 加拿大节点, 台湾节点],         icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Google.png             } 
   - {name: YouTube,  type: fallback, url: https://www.youtube.com/generate_204,          interval: 900, proxies: [美国节点, 新加坡节点, 日本节点, 韩国节点, 英国节点, 加拿大节点, 台湾节点],         icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/YouTube.png            }
