@@ -72,16 +72,16 @@ proxy-providers:
 
 # 6. 分流分组 (完全采用 Party 版写法)
 proxy-groups:
-  - {name: 手动切换,  type: select, include-all: true, icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Static.png}
-  - {name: AI,       type: fallback, url: https://generativelanguage.googleapis.com, interval: 900, proxies: [美国节点, 新加坡节点, 日本节点, 韩国节点, 英国节点, 加拿大节点, 台湾节点],         icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/OpenAI.png             }
-  - {name: Google,   type: fallback, url: https://www.google.com/generate_204, interval: 900, proxies: [美国节点, 新加坡节点, 日本节点, 韩国节点, 英国节点, 加拿大节点, 台湾节点],         icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Google.png             } 
-  - {name: YouTube,  type: fallback, url: https://www.youtube.com/generate_204, interval: 900, proxies: [美国节点, 新加坡节点, 日本节点, 韩国节点, 英国节点, 加拿大节点, 台湾节点],         icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/YouTube.png            }
-  - {name: X,        type: fallback, url: https://abs.twimg.com/generate_204, interval: 900, proxies: [香港节点, 新加坡节点, 日本节点, 韩国节点, 美国节点, 英国节点, 加拿大节点, 台湾节点],         icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/X.png        }
-  - {name: Telegram, type: fallback, url: https://t.me/favicon.ico, interval: 900, proxies: [香港节点, 新加坡节点, 日本节点, 韩国节点, 美国节点, 英国节点, 加拿大节点, 台湾节点],         icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Telegram.png           }
-  - {name: Github,   type: fallback, url: https://raw.githubusercontent.com/favicon.ico, interval: 900, proxies: [香港节点, 新加坡节点, 日本节点, 韩国节点, 美国节点, 英国节点, 加拿大节点, 台湾节点],         icon: https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/github.png             }
-  - {name: Facebook, type: fallback, url: https://www.facebook.com/generate_204, interval: 900, proxies: [香港节点, 新加坡节点, 日本节点, 韩国节点, 美国节点, 英国节点, 加拿大节点, 台湾节点],         icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Facebook.png }
-  - {name: 全球加速,  type: select, proxies: [手动切换, 自动选择, 香港节点, 日本节点, 台湾节点, 美国节点, 新加坡节点, 韩国节点, 加拿大节点, 英国节点], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png}
-  - {name: 兜底分流,  type: select, proxies: [手动切换, 自动选择, 香港节点, 日本节点, 台湾节点, 美国节点, 新加坡节点, 韩国节点, 加拿大节点, 英国节点], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Final.png}
+  - {name: 手动切换,  type: select, include-all: true,                                                                                                                                                              icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Static.png             }
+  - {name: AI,       type: fallback, url: https://generativelanguage.googleapis.com,     interval: 900, proxies: [美国节点, 新加坡节点, 日本节点, 韩国节点, 英国节点, 加拿大节点, 台湾节点],                             icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/OpenAI.png             }
+  - {name: Google,   type: fallback, url: https://www.google.com/generate_204,           interval: 900, proxies: [美国节点, 新加坡节点, 日本节点, 韩国节点, 英国节点, 加拿大节点, 台湾节点],                             icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Google.png             } 
+  - {name: YouTube,  type: fallback, url: https://www.youtube.com/generate_204,          interval: 900, proxies: [美国节点, 新加坡节点, 日本节点, 韩国节点, 英国节点, 加拿大节点, 台湾节点],                             icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/YouTube.png            }
+  - {name: X,        type: fallback, url: https://abs.twimg.com/generate_204,            interval: 900, proxies: [香港节点, 新加坡节点, 日本节点, 韩国节点, 美国节点, 英国节点, 加拿大节点, 台湾节点],                    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/X.png        }
+  - {name: Telegram, type: fallback, url: https://t.me/favicon.ico,                      interval: 900, proxies: [香港节点, 新加坡节点, 日本节点, 韩国节点, 美国节点, 英国节点, 加拿大节点, 台湾节点],                    icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Telegram.png           }
+  - {name: Github,   type: fallback, url: https://raw.githubusercontent.com/favicon.ico, interval: 900, proxies: [香港节点, 新加坡节点, 日本节点, 韩国节点, 美国节点, 英国节点, 加拿大节点, 台湾节点],                    icon: https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/github.png             }
+  - {name: Facebook, type: fallback, url: https://www.facebook.com/generate_204,         interval: 900, proxies: [香港节点, 新加坡节点, 日本节点, 韩国节点, 美国节点, 英国节点, 加拿大节点, 台湾节点],                    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Facebook.png }
+  - {name: 全球加速,  type: select,                                                                      proxies: [手动切换, 自动选择, 香港节点, 日本节点, 台湾节点, 美国节点, 新加坡节点, 韩国节点, 加拿大节点, 英国节点], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png             }
+  - {name: 兜底分流,  type: select,                                                                      proxies: [手动切换, 自动选择, 香港节点, 日本节点, 台湾节点, 美国节点, 新加坡节点, 韩国节点, 加拿大节点, 英国节点], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Final.png              }
 
   # 节点子分组 (自动正则筛选)
   - {name: 自动选择,   type: url-test, include-all: true, url: https://www.google.com/generate_204, interval: 900, tolerance: 60, icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Urltest.png}
@@ -96,17 +96,17 @@ proxy-groups:
 
 # 7. 分流规则源 (完全采用 Party 版写法)
 rule-providers:
-  Lan:         {behavior: classical, interval: 86400, format: yaml, type: http, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Lan/Lan.yaml ,               path: ./ruleset/Lan.yaml          }
-  Direct:      {behavior: classical, interval: 86400, format: yaml, type: http, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Direct/Direct.yaml ,         path: ./ruleset/Direct.yaml       }
-  AdBlock:     {behavior: classical, interval: 86400, format: yaml, type: http, url: https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/Filters/AWAvenue-Ads-Rule-Clash-Classical.yaml ,  path: ./ruleset/AdBlock.yaml       }
-  AI:          {behavior: classical, interval: 86400, format: yaml, type: http, url: https://raw.githubusercontent.com/SecretGuestZ/Rules-Scripts/main/Resource/Rules/AI.yaml ,                    path: ./ruleset/AI.yaml      }
-  Google:      {behavior: classical, interval: 86400, format: yaml, type: http, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Google/Google.yaml ,         path: ./ruleset/Google.yaml       }
-  YouTube:     {behavior: classical, interval: 86400, format: yaml, type: http, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTube/YouTube.yaml ,       path: ./ruleset/YouTube.yaml      }
-  X:           {behavior: classical, interval: 86400, format: yaml, type: http, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Twitter/Twitter.yaml ,       path: ./ruleset/X.yaml            }
-  Telegram:    {behavior: classical, interval: 86400, format: yaml, type: http, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Telegram/Telegram.yaml ,     path: ./ruleset/Telegram.yaml     }
-  Github:      {behavior: classical, interval: 86400, format: yaml, type: http, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GitHub/GitHub.yaml ,         path: ./ruleset/Github.yaml       }
-  Facebook:    {behavior: classical, interval: 86400, format: yaml, type: http, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Facebook/Facebook.yaml ,     path: ./ruleset/Facebook.yaml     }
-  ProxyLite:   {behavior: classical, interval: 86400, format: yaml, type: http, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ProxyLite/ProxyLite.yaml ,   path: ./ruleset/ProxyLite.yaml    }
+  Lan:      {behavior: domain, interval: 86400, format: mrs, type: http, url: https://raw.githubusercontent.com/SecretGuestZ/Rules-Scripts/main/Resource/Rules/Lan.mrs ,                  path: ./ruleset/Lan.mrs       }
+  Direct:   {behavior: domain, interval: 86400, format: mrs, type: http, url: https://raw.githubusercontent.com/SecretGuestZ/Rules-Scripts/main/Resource/Rules/Direct.mrs ,               path: ./ruleset/Direct.mrs    }
+  AdBlock:  {behavior: domain, interval: 86400, format: mrs, type: http, url: https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/Filters/AWAvenue-Ads-Rule-Clash.mrs ,  path: ./ruleset/AdBlock.mrs   }
+  AI:       {behavior: domain, interval: 86400, format: mrs, type: http, url: https://raw.githubusercontent.com/SecretGuestZ/Rules-Scripts/main/Resource/Rules/AI.mrs ,                   path: ./ruleset/AI.mrs        }
+  Google:   {behavior: domain, interval: 86400, format: mrs, type: http, url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/google.mrs ,                    path: ./ruleset/Google.mrs    }
+  YouTube:  {behavior: domain, interval: 86400, format: mrs, type: http, url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/youtube.mrs ,                   path: ./ruleset/YouTube.mrs   }
+  X:        {behavior: domain, interval: 86400, format: mrs, type: http, url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/x.mrs ,                         path: ./ruleset/X.mrs         }
+  Telegram: {behavior: ipcidr, interval: 86400, format: mrs, type: http, url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/telegram.mrs ,                    path: ./ruleset/Telegram.mrs  }
+  Github:   {behavior: domain, interval: 86400, format: mrs, type: http, url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/github.mrs ,                    path: ./ruleset/GitHub.mrs    }
+  Facebook: {behavior: domain, interval: 86400, format: mrs, type: http, url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/facebook.mrs ,                  path: ./ruleset/Facebook.mrs  }
+  Proxy:    {behavior: domain, interval: 86400, format: mrs, type: http, url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo-lite/geosite/proxy.mrs ,                path: ./ruleset/Proxy.mrs     }
 
 # 8. 最终匹配规则 (完全采用 Party 版写法)
 rules:
@@ -121,6 +121,6 @@ rules:
   - RULE-SET,Telegram, Telegram
   - RULE-SET,Github, Github
   - RULE-SET,Facebook, Facebook
-  - RULE-SET,ProxyLite, 全球加速
+  - RULE-SET,Proxy, 全球加速
   - GEOIP,CN, DIRECT
   - MATCH, 兜底分流
