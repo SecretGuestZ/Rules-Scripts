@@ -4,6 +4,8 @@
 # 2026/05/13    @SecretGuestZ
 # ==========================================
 
+# 关键开关：false 代表使用 MMDB
+geodata-mode: false   
 # 在配置文件顶部加入以下内容
 geox-url:
   geoip: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/release/geoip.dat"
