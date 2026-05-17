@@ -4,6 +4,13 @@
 # 2026/05/13    @SecretGuestZ
 # ==========================================
 
+# 在配置文件顶部加入以下内容
+geox-url:
+  geoip: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/release/geoip.dat"
+  geosite: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/release/geosite.dat"
+  mmdb: "https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country-without-asn.mmdb"
+  asn: "https://raw.githubusercontent.com/P3TERX/GeoLite.mmdb/download/GeoLite2-ASN.mmdb"
+
 # 1. 基础设置 (基于 Pro 版优化)
 mode: rule
 mixed-port: 7893
