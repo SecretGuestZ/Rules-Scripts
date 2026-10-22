@@ -83,9 +83,28 @@ DOMAIN-SUFFIX,hf.co
 # JetBrains AI
 DOMAIN-SUFFIX,grazie.ai
 
-# Meta
+# Meta AI & Muse (Personal Agent & Muse Code)
+DOMAIN-SUFFIX,muse.ai
+DOMAIN-SUFFIX,museai.com
 DOMAIN-SUFFIX,meta.ai
-DOMAIN-SUFFIX,meta.com
+DOMAIN-SUFFIX,ai.meta.com
+DOMAIN-SUFFIX,llama.meta.com
+DOMAIN-SUFFIX,llama.com
+DOMAIN-SUFFIX,atmeta.com
+DOMAIN,auth.meta.com
+DOMAIN,account.meta.com
+DOMAIN,accountscenter.meta.com
+DOMAIN,accounts.meta.com
+DOMAIN,meta.graph.meta.com
+DOMAIN,developer.meta.com
+DOMAIN,imagine.meta.com
+DOMAIN-KEYWORD,metaai
+DOMAIN-SUFFIX,metaaivm.com
+DOMAIN-SUFFIX,metaaiusercontent.com
+DOMAIN-SUFFIX,ecto1usercontent.com
+DOMAIN-SUFFIX,meta-agents-apps.workers.dev
+DOMAIN,meta-ohttp-config-prod.fastly-edge.com
+DOMAIN,meta-ohttp-relay-prod.fastly-edge.com
 
 # Microsoft Copilot
 DOMAIN,copilot.microsoft.com
